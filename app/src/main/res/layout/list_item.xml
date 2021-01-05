@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="18dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginStart="32dp"
+    android:id="@+id/cardView1"
+    android:layout_marginEnd="32dp"
+    android:layout_height="200dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:id="@+id/tvSecondary"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardView2"
+            app:cardCornerRadius="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSecondary"
+            app:cardBackgroundColor="@color/lightBackground2"
+            app:layout_constraintStart_toStartOf="@id/tvSecondary"
+            android:elevation="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/ivItemImage"
+            android:scaleType="fitXY"
+            android:src="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:layout_height="120dp">
+
+        </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cardView2"
+            app:layout_constraintStart_toStartOf="@id/cardView2"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/dark"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/playImageIcon"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            app:layout_constraintLeft_toRightOf="@id/tvPrimary"
+            android:src="@drawable/ic_play2">
+
+        </ImageView>
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
